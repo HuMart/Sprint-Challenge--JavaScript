@@ -158,7 +158,7 @@ const largerPopulation = [];
 
 zooAnimals.filter(element => {
   if (element.population < 5 ) {
-    largerPopulation.push(element.population);
+    largerPopulation.push(element.animal_name, element.population);
     return largerPopulation.animal_name, largerPopulation.population;
   }
 })
