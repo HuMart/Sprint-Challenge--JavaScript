@@ -99,7 +99,9 @@ const uni = [];
 
 for( i = 0; i < graduates.length; i++) {
   graduates[i].university; 
-  uni.push(graduates[i].university.match("Uni"));
+  if (graduates[i].university.match("Uni")){
+    uni.push(graduates[i].university)
+  };
 }
 console.log(uni);
 

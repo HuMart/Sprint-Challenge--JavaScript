@@ -18,25 +18,26 @@ class CuboidMaker {
 
 class CubeMaker extends CuboidMaker {
     constructor(cubeAttrs) {
+
     super(cubeAttrs);
     }  
     volume() {
-        return cubeAttrs.length * cubeAttrs.length * cubeAttrs.length;
+        return this.length * this.length * this.length;
     }
     surfaceArea() {
-        return  6 * (cubeAttrs.length * cubeAttrs.length);
+        return  6 * (this.length * this.length);
     }        
     
 };
 
-const cube = new CubeMaker ({
-    "length" : 6,
+const cube = new CubeMaker({
+    length = 6,
 });
 
-const cuboid = new CuboidMaker ({
-    "length" : 4,
-    "height" : 5,
-    "width" : 5
+const cuboid = new CuboidMaker({
+    length = 4,
+    height = 5,
+    width = 5
 });
   
   
